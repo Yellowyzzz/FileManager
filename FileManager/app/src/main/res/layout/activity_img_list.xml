@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImgListActivity">
+
+    <LinearLayout
+        android:id="@+id/image_wall_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.filemanager.Layout.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <GridView
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_wall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="1dp"
+            android:horizontalSpacing="1dp"
+            android:numColumns="auto_fit"
+            android:columnWidth="85dp"
+            android:stretchMode="columnWidth"/>
+
+    </LinearLayout>
+
+<!--    <com.example.filemanager.Layout.TitleLayout-->
+<!--        android:id="@+id/title_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"/>-->
+
+<!--    <GridView-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:id="@+id/img_wall"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:verticalSpacing="1dp"-->
+<!--        android:horizontalSpacing="1dp"-->
+<!--        android:numColumns="auto_fit"-->
+<!--        android:columnWidth="85dp"-->
+<!--        android:stretchMode="columnWidth"/>-->
+
+    <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/bg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#ff000000" />-->
+
+        <com.bm.library.PhotoView
+            android:id="@+id/selected_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"/>
+
+    </FrameLayout>
+
+</FrameLayout>
